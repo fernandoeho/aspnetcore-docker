@@ -6,6 +6,7 @@ namespace Greetings.API.Models
     {
         public Greeting(string name, string machineName, string oS)
         {
+            Subject = "Administração de Sistema Operacional em Plataformas Proprietárias";
             Message = String.Format("Olá, {0}", name);
             Name = name;
             MachineName = machineName;
@@ -13,6 +14,7 @@ namespace Greetings.API.Models
             DateTimeStamp = DateTime.Now;
         }
 
+        public string Subject { get; set; }
         public string Message { get; set; }
         public string Name { get; set; }
         public string MachineName { get; set; }

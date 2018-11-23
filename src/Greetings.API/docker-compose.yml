@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  apigreetingsalpine:
+    image: apigreetings-alpine
+    build:
+      context: .
+    ports:
+      - "20000:80"
